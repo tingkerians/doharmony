@@ -60,16 +60,6 @@
                                     <segue destination="OFe-hs-Nvd" kind="presentation" id="A7p-Ex-lVM"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zDI-4J-5d6">
-                                <rect key="frame" x="192" y="294" width="216" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="jfW-IX-cDf"/>
-                                    <constraint firstAttribute="width" constant="216" id="od7-mx-DdK"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ3-mW-dbv">
                                 <rect key="frame" x="265" y="84" width="67" height="67"/>
                                 <constraints>
@@ -100,6 +90,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0hJ-o7-Sha"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zDI-4J-5d6">
+                                <rect key="frame" x="192" y="294" width="216" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="jfW-IX-cDf"/>
+                                    <constraint firstAttribute="width" constant="216" id="od7-mx-DdK"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cVz-Ad-C5F"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -136,6 +142,37 @@
             <point key="canvasLocation" x="-208" y="-289"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="cVU-5Z-8Ca">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dw3-5n-pvo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mk7-lo-JSK"/>
+                        <viewControllerLayoutGuide type="bottom" id="CX3-8q-xAa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TDd-eX-i46">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nw-dY-Mhe">
+                                <rect key="frame" x="269" y="289" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0nw-dY-Mhe" firstAttribute="centerY" secondItem="TDd-eX-i46" secondAttribute="centerY" id="WHk-Iq-Qlk"/>
+                            <constraint firstItem="0nw-dY-Mhe" firstAttribute="centerX" secondItem="TDd-eX-i46" secondAttribute="centerX" id="t39-66-Ay8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2wc-e0-Ld7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmM-cQ-II1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="-289"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="etU-fQ-AnJ">
             <objects>
                 <viewController id="OFe-hs-Nvd" sceneMemberID="viewController">
@@ -154,21 +191,6 @@
                                     <constraint firstAttribute="height" constant="600" id="h4D-ZO-Wzt"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sC-dv-NS0">
-                                <rect key="frame" x="183" y="499" width="234" height="33"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="234" id="3cP-wI-eCp"/>
-                                    <constraint firstAttribute="height" constant="33" id="lXo-gk-foO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textbox" translatesAutoresizingMaskIntoConstraints="NO" id="fEF-I5-Eme">
                                 <rect key="frame" x="183" y="164" width="234" height="33"/>
                                 <constraints>
@@ -296,6 +318,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sC-dv-NS0">
+                                <rect key="frame" x="183" y="499" width="234" height="33"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="3cP-wI-eCp"/>
+                                    <constraint firstAttribute="height" constant="33" id="lXo-gk-foO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="woV-0E-ExM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -358,6 +398,24 @@
                 </textField>
             </objects>
             <point key="canvasLocation" x="-208" y="552"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uFa-yo-k3O">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uNM-AO-66N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xOB-lu-XLf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dw3-5n-pvo" kind="relationship" relationship="rootViewController" id="HB5-f3-Dth"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vy7-uv-y38" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="-289"/>
         </scene>
     </scenes>
     <resources>

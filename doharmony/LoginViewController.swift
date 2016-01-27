@@ -11,8 +11,8 @@ import SwiftyJSON
 import Alamofire
 import CoreData
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     /*
     Send a login request to the server
     */
-    @IBAction func loginTapped(sender: UIButton) {
+    @IBAction func loginTapped(sender: UIButton?) {
         
         let username = usernameTextField.text!;
         let password = passwordTextField.text!;
@@ -53,12 +53,16 @@ class LoginViewController: UIViewController {
             .responseJSON { response in
                 switch response.result {
                 case .Success:
-                    let result = JSON(response.result.value!);
-                    print("JSON RESPONSE VALUE:\n\(result)");
-                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
-                    self.showAlert("Login Success", message: result["token"].stringValue); //
-                    print("STATUS CODE:\(response.response?.statusCode)");
-                    self.displayAllToken(); //
+//                    let result = JSON(response.result.value!);
+//                    print("JSON RESPONSE VALUE:\n\(result)");
+//                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
+//                    self.showAlert("Login Success", message: result["token"].stringValue); //
+//                    print("STATUS CODE:\(response.response?.statusCode)");
+//                    self.displayAllToken(); //
+                    
+                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc: UINavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
+                    self.presentViewController(vc, animated: true, completion: nil)
                     
                 case .Failure(let error):
                     print("HTTP RESPONSE: \n\(response.response)"); //
@@ -169,5 +173,17 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //Keyboard Action
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == usernameTextField {
+            passwordTextField.becomeFirstResponder()
+        }else if textField == passwordTextField{
+            self.loginTapped(nil)
+            passwordTextField.resignFirstResponder()
+        }
+        return true
+    }
 
 }
