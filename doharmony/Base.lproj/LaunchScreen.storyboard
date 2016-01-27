@@ -18,6 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3yT-QY-TtP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="xu4-m8-pAw"/>
+                                    <constraint firstAttribute="width" constant="600" id="zAQ-aO-sk9"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tingkerians" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8c-Ol-Lv9">
                                 <rect key="frame" x="222" y="564" width="156" height="21"/>
                                 <constraints>
@@ -40,13 +47,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="eHO-qV-JRk"/>
                                     <constraint firstAttribute="width" constant="67" id="yYx-uK-sFu"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3yT-QY-TtP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="xu4-m8-pAw"/>
-                                    <constraint firstAttribute="width" constant="600" id="zAQ-aO-sk9"/>
                                 </constraints>
                             </imageView>
                         </subviews>
