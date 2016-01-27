@@ -141,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="-208" y="-289"/>
         </scene>
-        <!--View Controller-->
+        <!--DOHARMONY-->
         <scene sceneID="cVU-5Z-8Ca">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dw3-5n-pvo" sceneMemberID="viewController">
@@ -153,24 +153,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nw-dY-Mhe">
-                                <rect key="frame" x="269" y="289" width="62" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDA-e2-Qgd">
+                                <rect key="frame" x="197" y="81" width="207" height="30"/>
+                                <state key="normal" title="Record video" backgroundImage="loginButton2">
+                                    <color key="titleColor" red="1" green="0.9686307682012536" blue="0.99159042256345109" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xhw-h1-9Fq" kind="show" id="fgB-ig-2sl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0nw-dY-Mhe" firstAttribute="centerY" secondItem="TDd-eX-i46" secondAttribute="centerY" id="WHk-Iq-Qlk"/>
-                            <constraint firstItem="0nw-dY-Mhe" firstAttribute="centerX" secondItem="TDd-eX-i46" secondAttribute="centerX" id="t39-66-Ay8"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2wc-e0-Ld7"/>
+                    <navigationItem key="navigationItem" title="DOHARMONY" id="2wc-e0-Ld7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmM-cQ-II1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1338" y="-289"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i3f-VE-sOJ">
+            <objects>
+                <viewController id="xhw-h1-9Fq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7BS-wa-6qu"/>
+                        <viewControllerLayoutGuide type="bottom" id="uYO-98-3Rx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Dv-NL-4A3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dI-LB-Pks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2041" y="-289"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="etU-fQ-AnJ">
