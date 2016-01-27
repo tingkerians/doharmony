@@ -53,13 +53,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             .responseJSON { response in
                 switch response.result {
                 case .Success:
-//                    let result = JSON(response.result.value!);
-//                    print("JSON RESPONSE VALUE:\n\(result)");
-//                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
-//                    self.showAlert("Login Success", message: result["token"].stringValue); //
-//                    print("STATUS CODE:\(response.response?.statusCode)");
-//                    self.displayAllToken(); //
-                    
+                    let result = JSON(response.result.value!);
+                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
                     let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc: UINavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
                     self.presentViewController(vc, animated: true, completion: nil)
