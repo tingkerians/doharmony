@@ -835,10 +835,10 @@
             </objects>
             <point key="canvasLocation" x="2150" y="1212"/>
         </scene>
-        <!--View Controller-->
+        <!--Record View Controller-->
         <scene sceneID="i3f-VE-sOJ">
             <objects>
-                <viewController id="xhw-h1-9Fq" sceneMemberID="viewController">
+                <viewController id="xhw-h1-9Fq" customClass="RecordViewController" customModule="doharmony" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7BS-wa-6qu"/>
                         <viewControllerLayoutGuide type="bottom" id="uYO-98-3Rx"/>
@@ -846,7 +846,22 @@
                     <view key="view" contentMode="scaleToFill" id="7Dv-NL-4A3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yod-FS-UeU">
+                                <rect key="frame" x="0.0" y="64" width="600" height="472"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="472" id="uUQ-oi-XlC"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yod-FS-UeU" firstAttribute="top" secondItem="7BS-wa-6qu" secondAttribute="bottom" id="Ama-Eg-mgX"/>
+                            <constraint firstAttribute="trailing" secondItem="yod-FS-UeU" secondAttribute="trailing" id="FEC-3A-DWV"/>
+                            <constraint firstItem="yod-FS-UeU" firstAttribute="centerX" secondItem="7Dv-NL-4A3" secondAttribute="centerX" id="nrr-Vb-ei8"/>
+                            <constraint firstItem="yod-FS-UeU" firstAttribute="leading" secondItem="7Dv-NL-4A3" secondAttribute="leading" id="vKy-iA-XCA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dI-LB-Pks" userLabel="First Responder" sceneMemberID="firstResponder"/>
