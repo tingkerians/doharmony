@@ -30,41 +30,44 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     Send a login request to the server
     */
     @IBAction func loginTapped(sender: UIButton?) {
-        
-        let username = usernameTextField.text!;
-        let password = passwordTextField.text!;
-        
-        let serverURL = "http://192.168.0.112/api/login";
-        
-        if (username.isEmpty || password.isEmpty) {
-            let message = "Username and password should not be empty";
-            self.showAlert("Alert", message: message);
-            return;
-        }
-        
-        let parameters = [
-            "username" : username,
-            "password" : password
-        ];
-        
-        
-        Alamofire.request(.POST, serverURL	, parameters: parameters, encoding: .JSON)
-            .validate()
-            .responseJSON { response in
-                switch response.result {
-                case .Success:
-                    let result = JSON(response.result.value!);
-                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
-                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc: UINavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
-                    self.presentViewController(vc, animated: true, completion: nil)
-                    
-                case .Failure(let error):
-                    print("HTTP RESPONSE: \n\(response.response)"); //
-                    print("STATUS CODE:\(response.response?.statusCode)");
-                    self.showAlert("Login failed", message: String(error.localizedDescription));
-                }
-        }
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                            let vc: UIViewController = storyboard.instantiateViewControllerWithIdentifier("RevealViewController") as! UIViewController
+                            self.presentViewController(vc, animated: true, completion: nil)
+
+//        let username = usernameTextField.text!;
+//        let password = passwordTextField.text!;
+//        
+//        let serverURL = "http://192.168.0.112/api/login";
+//        
+//        if (username.isEmpty || password.isEmpty) {
+//            let message = "Username and password should not be empty";
+//            self.showAlert("Alert", message: message);
+//            return;
+//        }
+//        
+//        let parameters = [
+//            "username" : username,
+//            "password" : password
+//        ];
+//        
+//        
+//        Alamofire.request(.POST, serverURL	, parameters: parameters, encoding: .JSON)
+//            .validate()
+//            .responseJSON { response in
+//                switch response.result {
+//                case .Success:
+//                    let result = JSON(response.result.value!);
+//                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
+//                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let vc: UINavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
+//                    self.presentViewController(vc, animated: true, completion: nil)
+//                    
+//                case .Failure(let error):
+//                    print("HTTP RESPONSE: \n\(response.response)"); //
+//                    print("STATUS CODE:\(response.response?.statusCode)");
+//                    self.showAlert("Login failed", message: String(error.localizedDescription));
+//                }
+//        }
     }
     
     /*
