@@ -13,9 +13,11 @@ class RecordingViewController: UIViewController {
     
     func dupe(template:UIView){
         
-        let newTemplate = UIView.init(frame: CGRectMake(10, 10, template.frame.width * 3.7, template.frame.height * 3.7))
+        let newTemplate = UIView.init(frame: CGRectMake(10, 10, template.frame.width * 3.7 - 10 , template.frame.height * 3.7 - 10))
         newTemplate.backgroundColor = UIColor.blackColor()
-        
+        newTemplate.contentMode = .ScaleAspectFit
+        print(template.frame.width)
+        print(template.frame.height)
         self.view.addSubview(newTemplate)
         
 //        let horizontalConstraint = newTemplate.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor, constant: 80)
@@ -25,16 +27,21 @@ class RecordingViewController: UIViewController {
         newTemplate.center = self.view.center
         
         for sv:UIView in template.subviews{
-            let x = sv.frame.origin.x * 3.7
-            let y = sv.frame.origin.y * 3.7
-            let w = sv.frame.width * 3.7
-            let h = sv.frame.height * 3.7
+            let x = sv.frame.origin.x * 3.7 - 10
+            let y = sv.frame.origin.y * 3.7 - 10
+            let w = sv.frame.width * 3.7 + 10
+            let h = sv.frame.height * 3.7 + 10
             
             let size = CGRectMake(x, y, w, h)
             let frame:UIView = UIView.init(frame: size)
             frame.backgroundColor = UIColor.lightGrayColor()    
-            
+            //frame.contentMode = .ScaleAspectFit
             newTemplate.addSubview(frame)
+            print("Frame x1 \(sv.frame.origin.x)")
+            print("Frame x2 \(x)")
+            print("Frame y1 \(sv.frame.origin.y)")
+            print("Frame y2 \(y)")
+            print("Frame size: \(size)")
         }
     }
 

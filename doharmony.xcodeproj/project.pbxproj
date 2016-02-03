@@ -282,7 +282,7 @@
 				TargetAttributes = {
 					E74592D31C5706EE00C86DA8 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 6SK6Z2X59W;
+						DevelopmentTeam = MY7PN5V7K8;
 					};
 				};
 			};
@@ -571,7 +571,7 @@
 				INFOPLIST_FILE = doharmony/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tingker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tignkerians;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -587,7 +587,7 @@
 				INFOPLIST_FILE = doharmony/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tingker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tignkerians;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

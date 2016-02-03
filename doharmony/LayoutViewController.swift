@@ -11,7 +11,6 @@ import UIKit
 
 class LayoutViewController: UIViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
-    
     var pageViewController: UIPageViewController!
     let pages = ["layoutSelection1", "layoutSelection2"]
     
@@ -41,7 +40,6 @@ class LayoutViewController: UIViewController, UIPageViewControllerDelegate, UIPa
                 return viewControllerAtIndex(index - 1)
             }
         }
-
         return nil
     }
     
@@ -52,7 +50,6 @@ class LayoutViewController: UIViewController, UIPageViewControllerDelegate, UIPa
                 return viewControllerAtIndex(index + 1)
             }
         }
-
         return nil
     }
     
