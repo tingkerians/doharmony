@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFE55C981C61ED4300D2F9DD /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE55C971C61ED4300D2F9DD /* PlayerViewController.swift */; };
 		E74592D81C5706EE00C86DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74592D71C5706EE00C86DA8 /* AppDelegate.swift */; };
 		E74592DD1C5706EE00C86DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74592DB1C5706EE00C86DA8 /* Main.storyboard */; };
 		E74592E01C5706EE00C86DA8 /* doharmony.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E74592DE1C5706EE00C86DA8 /* doharmony.xcdatamodeld */; };
@@ -150,6 +151,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DFE55C971C61ED4300D2F9DD /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		E74592D41C5706EE00C86DA8 /* doharmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doharmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74592D71C5706EE00C86DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E74592DC1C5706EE00C86DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				E74592D71C5706EE00C86DA8 /* AppDelegate.swift */,
 				E74593421C57100B00C86DA8 /* LoginViewController.swift */,
 				E74592DB1C5706EE00C86DA8 /* Main.storyboard */,
+				DFE55C971C61ED4300D2F9DD /* PlayerViewController.swift */,
 				E74592E11C5706EE00C86DA8 /* Assets.xcassets */,
 				E74592E31C5706EE00C86DA8 /* LaunchScreen.storyboard */,
 				E74592E61C5706EE00C86DA8 /* Info.plist */,
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E74593431C57100B00C86DA8 /* LoginViewController.swift in Sources */,
+				DFE55C981C61ED4300D2F9DD /* PlayerViewController.swift in Sources */,
 				E74592E01C5706EE00C86DA8 /* doharmony.xcdatamodeld in Sources */,
 				E74592D81C5706EE00C86DA8 /* AppDelegate.swift in Sources */,
 			);
