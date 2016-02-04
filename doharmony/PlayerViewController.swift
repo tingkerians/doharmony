@@ -10,10 +10,12 @@ import UIKit
 
 class PlayerViewController: UIViewController {
 
+    @IBOutlet weak var PlayerDisplay: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        PlayerDisplay.contentMode = .ScaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {
