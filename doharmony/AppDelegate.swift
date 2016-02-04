@@ -17,12 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        UINavigationBar.appearance().barTintColor = UIColor.grayColor()
+        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        let navBgImage:UIImage = UIImage(named: "background.png")!
-        UINavigationBar.appearance().setBackgroundImage(navBgImage, forBarMetrics: .Default)
+        //let navBgImage:UIImage = UIImage(named: "background.png")!
+        //UINavigationBar.appearance().setBackgroundImage(navBgImage, forBarMetrics: .Default)
         return true
     }
 
