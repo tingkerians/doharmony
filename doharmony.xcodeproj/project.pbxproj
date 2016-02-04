@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33A5C9961C63977200A5B307 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5C9951C63977200A5B307 /* SignupViewController.swift */; };
 		6C67CF631C58ACBD001195BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67CF621C58ACBD001195BC /* HomeViewController.swift */; };
 		6CB68C5E1C59B5170054E2DC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB68C5D1C59B5170054E2DC /* InfoViewController.swift */; };
 		6CC481FB1C59BDB7007638EE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC481FA1C59BDB7007638EE /* SWRevealViewController.m */; };
@@ -155,6 +156,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		33A5C9951C63977200A5B307 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		6C67CF621C58ACBD001195BC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6CB68C5D1C59B5170054E2DC /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		6CC481F81C59BDB6007638EE /* doharmony-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "doharmony-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				6CC481F71C59BD82007638EE /* SWRevealViewController */,
 				E74592D71C5706EE00C86DA8 /* AppDelegate.swift */,
 				E74593421C57100B00C86DA8 /* LoginViewController.swift */,
+				33A5C9951C63977200A5B307 /* SignupViewController.swift */,
 				E74592DB1C5706EE00C86DA8 /* Main.storyboard */,
 				6CF5B52B1C5AF18C0073DFBA /* ProjectTableViewController.swift */,
 				6CF5B5391C5AF1B80073DFBA /* LibraryTableViewController.swift */,
@@ -447,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A5C9961C63977200A5B307 /* SignupViewController.swift in Sources */,
 				E74593431C57100B00C86DA8 /* LoginViewController.swift in Sources */,
 				E74592E01C5706EE00C86DA8 /* doharmony.xcdatamodeld in Sources */,
 				E74592D81C5706EE00C86DA8 /* AppDelegate.swift in Sources */,

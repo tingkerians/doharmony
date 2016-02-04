@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -153,10 +153,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sNL-ea-iru">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sNL-ea-iru">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-vL-1Y0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-vL-1Y0">
                                 <rect key="frame" x="554" y="8" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="IRK-1o-5ZU"/>
@@ -171,13 +171,13 @@
                                     <action selector="closePressed:" destination="9o7-lx-Dwi" eventType="touchUpInside" id="zrG-XI-B5A"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kih-Rw-nQv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kih-Rw-nQv">
                                 <rect key="frame" x="260" y="301" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doharmony" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Ix-Q3u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Doharmony" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Ix-Q3u">
                                 <rect key="frame" x="203" y="260" width="194" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="LKU-gE-e7z"/>
@@ -187,7 +187,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dc8-Vx-btl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dc8-Vx-btl">
                                 <rect key="frame" x="275" y="221" width="51" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="qOG-KP-srO"/>
@@ -858,10 +858,10 @@
             </objects>
             <point key="canvasLocation" x="2041" y="-289"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="etU-fQ-AnJ">
             <objects>
-                <viewController id="OFe-hs-Nvd" sceneMemberID="viewController">
+                <viewController id="OFe-hs-Nvd" customClass="SignupViewController" customModule="doharmony" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o6i-Xt-PEg"/>
                         <viewControllerLayoutGuide type="bottom" id="tc9-uq-6U3"/>
@@ -929,6 +929,9 @@
                                 <state key="normal" title="Sign Up" backgroundImage="loginButton2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="singupTapped:" destination="OFe-hs-Nvd" eventType="touchUpInside" id="hpL-d2-mzz"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textbox" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-hE-qAV">
                                 <rect key="frame" x="183" y="360" width="234" height="33"/>
@@ -1063,6 +1066,14 @@
                             <constraint firstItem="jg8-Oa-7KP" firstAttribute="top" secondItem="fEF-I5-Eme" secondAttribute="bottom" constant="14" id="zsN-72-9iy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="7iN-8G-e75" id="ygD-nD-4NS"/>
+                        <outlet property="firstNameTextField" destination="Obj-CS-FYK" id="rcQ-5E-grn"/>
+                        <outlet property="lastNameTextField" destination="jg8-Oa-7KP" id="ysk-wU-evN"/>
+                        <outlet property="passwordTextField" destination="JoN-oN-xq2" id="8fh-TM-lWI"/>
+                        <outlet property="retypePasswordTextField" destination="8z8-2Z-ZQE" id="kK9-AU-SeQ"/>
+                        <outlet property="usernameTextField" destination="1W5-ML-oIc" id="XSn-eO-zeQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9T-oE-LPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textbox" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-LG-vsb">
@@ -1156,6 +1167,6 @@
         <image name="title" width="375" height="83"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QhR-qy-B3M"/>
+        <segue reference="KCr-za-vWM"/>
     </inferredMetricsTieBreakers>
 </document>
