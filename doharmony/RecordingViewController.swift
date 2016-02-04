@@ -14,7 +14,7 @@ class RecordingViewController: UIViewController {
     func dupe(template:UIView){
         
         let newTemplate = UIView.init(frame: CGRectMake(10, 10, template.frame.width * 3.7 - 10 , template.frame.height * 3.7 - 10))
-        newTemplate.backgroundColor = UIColor.blackColor()
+        newTemplate.backgroundColor = UIColor.whiteColor()
         newTemplate.contentMode = .ScaleAspectFit
         print(template.frame.width)
         print(template.frame.height)
@@ -34,7 +34,7 @@ class RecordingViewController: UIViewController {
             
             let size = CGRectMake(x, y, w, h)
             let frame:UIView = UIView.init(frame: size)
-            frame.backgroundColor = UIColor.lightGrayColor()    
+            frame.backgroundColor = UIColor.darkGrayColor()
             //frame.contentMode = .ScaleAspectFit
             newTemplate.addSubview(frame)
             print("Frame x1 \(sv.frame.origin.x)")
