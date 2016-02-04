@@ -34,7 +34,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let username = usernameTextField.text!;
         let password = passwordTextField.text!;
         
-        let serverURL = "http://192.168.0.112/api/login";
+        let serverURL = "http://192.168.0.138:8080/users/login";
         
         if (username.isEmpty || password.isEmpty) {
             let message = "Username and password should not be empty";
@@ -56,7 +56,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     let result = JSON(response.result.value!);
                     self.saveToken(parameters["username"]!, token: result["token"].stringValue);
                     let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc: UINavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
+                    let vc: UIViewController = storyboard.instantiateViewControllerWithIdentifier("RevealViewController") as UIViewController
                     self.presentViewController(vc, animated: true, completion: nil)
                     
                 case .Failure(let error):
