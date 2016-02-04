@@ -205,6 +205,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="SELECT LAYOUT" id="8ed-ey-rru"/>
+                    <connections>
+                        <segue destination="Gd0-Vr-S6H" kind="show" id="vf2-Ie-vaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hM7-Je-na8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,22 +237,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hI1-ss-Gvm">
-                                <rect key="frame" x="260" y="477" width="80" height="80"/>
+                                <rect key="frame" x="271" y="493" width="59" height="59"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="WBq-t3-7y4"/>
-                                    <constraint firstAttribute="width" constant="80" id="gjE-0a-bpY"/>
+                                    <constraint firstAttribute="height" constant="59" id="WBq-t3-7y4"/>
+                                    <constraint firstAttribute="width" constant="59" id="gjE-0a-bpY"/>
                                 </constraints>
                                 <state key="normal" image="record-icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHD-9S-YP3">
-                                <rect key="frame" x="40" y="484" width="58" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="58" id="Shl-qF-fAK"/>
-                                    <constraint firstAttribute="height" constant="58" id="e9j-DO-dQU"/>
-                                </constraints>
-                                <state key="normal" image="metronome-btn"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-5f-u1O">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-5f-u1O">
                                 <rect key="frame" x="530" y="46" width="50" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="BKq-g8-18w"/>
@@ -257,32 +252,40 @@
                                 </constraints>
                                 <state key="normal" image="switchCamWhite"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSn-Ws-P3b">
-                                <rect key="frame" x="369" y="482" width="70" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsY-jU-SeA">
+                                <rect key="frame" x="20" y="46" width="38" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="VUC-eA-bsC"/>
+                                    <constraint firstAttribute="height" constant="29" id="1SH-Wi-kh7"/>
+                                    <constraint firstAttribute="width" constant="38" id="bRE-cf-3h1"/>
+                                </constraints>
+                                <state key="normal" image="music-folder"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSn-Ws-P3b">
+                                <rect key="frame" x="362" y="499" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="VUC-eA-bsC"/>
                                 </constraints>
                                 <state key="normal" image="play"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsY-jU-SeA">
-                                <rect key="frame" x="20" y="46" width="41" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHD-9S-YP3">
+                                <rect key="frame" x="40" y="499" width="48" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="1SH-Wi-kh7"/>
-                                    <constraint firstAttribute="width" constant="41" id="bRE-cf-3h1"/>
+                                    <constraint firstAttribute="width" constant="48" id="Shl-qF-fAK"/>
+                                    <constraint firstAttribute="height" constant="48" id="e9j-DO-dQU"/>
                                 </constraints>
-                                <state key="normal" image="music-folder"/>
+                                <state key="normal" image="metronome-btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iNg-3w-WGQ" secondAttribute="trailing" id="0sn-LX-KRm"/>
-                            <constraint firstItem="yzm-cJ-1II" firstAttribute="top" secondItem="xSn-Ws-P3b" secondAttribute="bottom" constant="48" id="Cc5-8G-SVP"/>
-                            <constraint firstItem="yzm-cJ-1II" firstAttribute="top" secondItem="hI1-ss-Gvm" secondAttribute="bottom" constant="43" id="DaI-h9-Jek"/>
+                            <constraint firstItem="yzm-cJ-1II" firstAttribute="top" secondItem="xSn-Ws-P3b" secondAttribute="bottom" constant="53" id="Cc5-8G-SVP"/>
+                            <constraint firstItem="yzm-cJ-1II" firstAttribute="top" secondItem="hI1-ss-Gvm" secondAttribute="bottom" constant="48" id="DaI-h9-Jek"/>
                             <constraint firstItem="h3c-5f-u1O" firstAttribute="top" secondItem="5rM-vi-yHk" secondAttribute="bottom" constant="26" id="Kqk-Ld-lCJ"/>
-                            <constraint firstItem="xSn-Ws-P3b" firstAttribute="leading" secondItem="hI1-ss-Gvm" secondAttribute="trailing" constant="29" id="M0p-RW-7YQ"/>
+                            <constraint firstItem="xSn-Ws-P3b" firstAttribute="leading" secondItem="hI1-ss-Gvm" secondAttribute="trailing" constant="32" id="M0p-RW-7YQ"/>
                             <constraint firstItem="yHD-9S-YP3" firstAttribute="leading" secondItem="QfC-so-RKW" secondAttribute="leadingMargin" constant="20" id="Ny6-M3-4hS"/>
                             <constraint firstItem="hI1-ss-Gvm" firstAttribute="centerX" secondItem="QfC-so-RKW" secondAttribute="centerX" id="POQ-jw-3fT"/>
-                            <constraint firstItem="yzm-cJ-1II" firstAttribute="top" secondItem="yHD-9S-YP3" secondAttribute="bottom" constant="58" id="VtN-h0-q6l"/>
+                            <constraint firstItem="yzm-cJ-1II" firstAttribute="top" secondItem="yHD-9S-YP3" secondAttribute="bottom" constant="53" id="VtN-h0-q6l"/>
                             <constraint firstItem="xSn-Ws-P3b" firstAttribute="centerY" secondItem="hI1-ss-Gvm" secondAttribute="centerY" id="WKN-7C-G2P"/>
                             <constraint firstItem="iNg-3w-WGQ" firstAttribute="leading" secondItem="QfC-so-RKW" secondAttribute="leading" id="Yb1-E6-CFW"/>
                             <constraint firstAttribute="trailing" secondItem="h3c-5f-u1O" secondAttribute="trailing" constant="20" id="dtw-5m-Rei"/>
@@ -292,10 +295,13 @@
                             <constraint firstItem="iNg-3w-WGQ" firstAttribute="top" secondItem="QfC-so-RKW" secondAttribute="top" id="t4v-Oi-Ol7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="43n-HV-qFn">
+                        <barButtonItem key="rightBarButtonItem" tag="100" systemItem="done" id="du5-PE-Ld3"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8f-cb-6dI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2782" y="-302"/>
+            <point key="canvasLocation" x="2811" y="-289"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="etU-fQ-AnJ">
@@ -1151,7 +1157,7 @@
                     </view>
                     <connections>
                         <outlet property="LayoutSelectionView" destination="eWm-pd-9Df" id="kzJ-Bl-XhZ"/>
-                        <segue destination="Gd0-Vr-S6H" kind="show" identifier="toRecordingPage" id="3D8-oy-CMI"/>
+                        <segue destination="Gd0-Vr-S6H" kind="show" identifier="toRecordingPage" id="IY4-I6-sqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYn-53-lbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1981,12 +1987,12 @@
                     </view>
                     <connections>
                         <outlet property="LayoutSelectionView" destination="uTz-qA-dIO" id="dM0-2o-yVl"/>
-                        <segue destination="Gd0-Vr-S6H" kind="show" identifier="toRecordingPage" id="Ggf-uI-EUD"/>
+                        <segue destination="Gd0-Vr-S6H" kind="show" identifier="toRecordingPage" id="V7Q-G1-ehw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKk-fZ-Zyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="1129"/>
+            <point key="canvasLocation" x="2047" y="1141"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="6nK-sQ-Uz4">
@@ -2011,6 +2017,6 @@
         <image name="title" width="375" height="83"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3D8-oy-CMI"/>
+        <segue reference="vf2-Ie-vaa"/>
     </inferredMetricsTieBreakers>
 </document>
