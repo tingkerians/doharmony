@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LibraryTableViewController: UITableViewController {
+class LibraryTableViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {

@@ -25,6 +25,8 @@
 		E74593751C5717A300C86DA8 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E74593671C57167000C86DA8 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E74593781C5717AA00C86DA8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E745934F1C57166600C86DA8 /* Alamofire.framework */; };
 		E74593791C5717AA00C86DA8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E745934F1C57166600C86DA8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F61203171C633B3400043DB8 /* sideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61203161C633B3400043DB8 /* sideMenuTableViewCell.swift */; };
+		F6F8F5611C6329F600439570 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F8F5601C6329F600439570 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +180,8 @@
 		E74593421C57100B00C86DA8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E74593441C57166500C86DA8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		E745935C1C57167000C86DA8 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		F61203161C633B3400043DB8 /* sideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		F6F8F5601C6329F600439570 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,10 +231,12 @@
 				6CC481F71C59BD82007638EE /* SWRevealViewController */,
 				E74592D71C5706EE00C86DA8 /* AppDelegate.swift */,
 				E74593421C57100B00C86DA8 /* LoginViewController.swift */,
+				F6F8F5601C6329F600439570 /* SearchViewController.swift */,
 				E74592DB1C5706EE00C86DA8 /* Main.storyboard */,
 				6CB321381C5F496E0061573E /* NewViewController.swift */,
 				6CB3213A1C5F4C300061573E /* CollectionViewCell.swift */,
 				6CF5B52B1C5AF18C0073DFBA /* ProjectTableViewController.swift */,
+				F61203161C633B3400043DB8 /* sideMenuTableViewCell.swift */,
 				6CF5B5391C5AF1B80073DFBA /* LibraryTableViewController.swift */,
 				6CB68C5D1C59B5170054E2DC /* InfoViewController.swift */,
 				6C67CF621C58ACBD001195BC /* HomeViewController.swift */,
@@ -458,11 +464,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E74593431C57100B00C86DA8 /* LoginViewController.swift in Sources */,
+				F61203171C633B3400043DB8 /* sideMenuTableViewCell.swift in Sources */,
 				E74592E01C5706EE00C86DA8 /* doharmony.xcdatamodeld in Sources */,
 				E74592D81C5706EE00C86DA8 /* AppDelegate.swift in Sources */,
 				6CB321271C5F21290061573E /* RecordViewController.swift in Sources */,
 				6CB321391C5F496E0061573E /* NewViewController.swift in Sources */,
 				6C67CF631C58ACBD001195BC /* HomeViewController.swift in Sources */,
+				F6F8F5611C6329F600439570 /* SearchViewController.swift in Sources */,
 				6CB68C5E1C59B5170054E2DC /* InfoViewController.swift in Sources */,
 				6CF5B52C1C5AF18C0073DFBA /* ProjectTableViewController.swift in Sources */,
 				6CF5B53A1C5AF1B80073DFBA /* LibraryTableViewController.swift in Sources */,
