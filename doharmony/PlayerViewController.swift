@@ -1,25 +1,29 @@
 //
-//  SearchViewController.swift
+//  PlayerViewController.swift
 //  doharmony
 //
-//  Created by eliakim on 2/4/16.
+//  Created by Eleazer Toluan on 2/3/16.
 //  Copyright © 2016 khemer sone andres. All rights reserved.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class PlayerViewController: UIViewController {
 
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var PlayerDisplay: UIView!
+    
+    @IBOutlet weak var TitleLabel: UILabel!
+ 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var image = UIImage()
+//    var title = UILabel()!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }        // Do any additional setup after loading the view.
+        self.imageView.image = self.image
+//        self.TitleLabel.text = self.title
+        PlayerDisplay.contentMode = .ScaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {

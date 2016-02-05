@@ -20,7 +20,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,44 +30,41 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     Send a login request to the server
     */
     @IBAction func loginTapped(sender: UIButton?) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                            let vc: UIViewController = storyboard.instantiateViewControllerWithIdentifier("RevealViewController") as! UIViewController
-                            self.presentViewController(vc, animated: true, completion: nil)
-
-//        let username = usernameTextField.text!;
-//        let password = passwordTextField.text!;
-//        
-//        let serverURL = "http://192.168.0.112/api/login";
-//        
-//        if (username.isEmpty || password.isEmpty) {
-//            let message = "Username and password should not be empty";
-//            self.showAlert("Alert", message: message);
-//            return;
-//        }
-//        
-//        let parameters = [
-//            "username" : username,
-//            "password" : password
-//        ];
-//        
-//        
-//        Alamofire.request(.POST, serverURL	, parameters: parameters, encoding: .JSON)
-//            .validate()
-//            .responseJSON { response in
-//                switch response.result {
-//                case .Success:
-//                    let result = JSON(response.result.value!);
-//                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
-//                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//                    let vc: UINavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
-//                    self.presentViewController(vc, animated: true, completion: nil)
-//                    
-//                case .Failure(let error):
-//                    print("HTTP RESPONSE: \n\(response.response)"); //
-//                    print("STATUS CODE:\(response.response?.statusCode)");
-//                    self.showAlert("Login failed", message: String(error.localizedDescription));
-//                }
-//        }
+        
+        let username = usernameTextField.text!;
+        let password = passwordTextField.text!;
+        
+        let serverURL = "http://192.168.0.138:8080/users/login";
+        
+        if (username.isEmpty || password.isEmpty) {
+            let message = "Username and password should not be empty";
+            self.showAlert("Alert", message: message);
+            return;
+        }
+        
+        let parameters = [
+            "username" : username,
+            "password" : password
+        ];
+        
+        
+        Alamofire.request(.POST, serverURL	, parameters: parameters, encoding: .JSON)
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    let result = JSON(response.result.value!);
+                    self.saveToken(parameters["username"]!, token: result["token"].stringValue);
+                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc: UIViewController = storyboard.instantiateViewControllerWithIdentifier("RevealViewController") as UIViewController
+                    self.presentViewController(vc, animated: true, completion: nil)
+                    
+                case .Failure(let error):
+                    print("HTTP RESPONSE: \n\(response.response)"); //
+                    print("STATUS CODE:\(response.response?.statusCode)");
+                    self.showAlert("Login failed", message: String(error.localizedDescription));
+                }
+        }
     }
     
     /*
@@ -164,11 +161,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
     
@@ -183,5 +180,5 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
-
+    
 }
