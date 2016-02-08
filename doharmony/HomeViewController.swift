@@ -16,9 +16,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
   
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    let appleProducts = ["My first Video1","Video2","Video3","Video4","Video5","Video6"]
+    let appleProducts = ["My first Video1","Handsum","Pogi","DC","Acepella Sample","Video6"]
     
-    let imageArray = [UIImage(named: "maxresdefault"), UIImage(named: "5"),UIImage(named: "maxresdefault-3"), UIImage(named: "maxresdefault-2"),UIImage(named: "4"), UIImage(named: "maxresdefault-2")]
+    let imageArray = [UIImage(named: "zer"), UIImage(named: "daryl"),UIImage(named: "kim"), UIImage(named: "dc"),UIImage(named: "4"), UIImage(named: "maxresdefault-2")]
     
 
     

@@ -15,6 +15,7 @@
 		6CC481FB1C59BDB7007638EE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC481FA1C59BDB7007638EE /* SWRevealViewController.m */; };
 		6CF5B52C1C5AF18C0073DFBA /* ProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5B52B1C5AF18C0073DFBA /* ProjectTableViewController.swift */; };
 		6CF5B53A1C5AF1B80073DFBA /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5B5391C5AF1B80073DFBA /* LibraryTableViewController.swift */; };
+		765B6DA41C64715900A035C6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B6DA31C64715900A035C6 /* SignupViewController.swift */; };
 		DFB2C5FC1C6441E100C88C15 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2C5FB1C6441E100C88C15 /* PlayerViewController.swift */; };
 		DFB2C6011C64494000C88C15 /* LayoutPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2C5FD1C64494000C88C15 /* LayoutPage1.swift */; };
 		DFB2C6021C64494000C88C15 /* LayoutPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2C5FE1C64494000C88C15 /* LayoutPage2.swift */; };
@@ -176,6 +177,7 @@
 		6CC481FA1C59BDB7007638EE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6CF5B52B1C5AF18C0073DFBA /* ProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewController.swift; sourceTree = "<group>"; };
 		6CF5B5391C5AF1B80073DFBA /* LibraryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
+		765B6DA31C64715900A035C6 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DFB2C5FB1C6441E100C88C15 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DFB2C5FD1C64494000C88C15 /* LayoutPage1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutPage1.swift; sourceTree = "<group>"; };
 		DFB2C5FE1C64494000C88C15 /* LayoutPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutPage2.swift; sourceTree = "<group>"; };
@@ -244,7 +246,6 @@
 				E74592D71C5706EE00C86DA8 /* AppDelegate.swift */,
 				E74593421C57100B00C86DA8 /* LoginViewController.swift */,
 				F6F8F5601C6329F600439570 /* SearchViewController.swift */,
-				E74592DB1C5706EE00C86DA8 /* Main.storyboard */,
 				F6BAB53B1C645B1D00414A4E /* HomeCollectionViewCell.swift */,
 				DFB2C5FD1C64494000C88C15 /* LayoutPage1.swift */,
 				DFB2C5FE1C64494000C88C15 /* LayoutPage2.swift */,
@@ -252,6 +253,7 @@
 				DFB2C6001C64494000C88C15 /* RecordingViewController.swift */,
 				DFB2C5FB1C6441E100C88C15 /* PlayerViewController.swift */,
 				6CB321381C5F496E0061573E /* NewViewController.swift */,
+				765B6DA31C64715900A035C6 /* SignupViewController.swift */,
 				6CB3213A1C5F4C300061573E /* CollectionViewCell.swift */,
 				6CF5B52B1C5AF18C0073DFBA /* ProjectTableViewController.swift */,
 				F61203161C633B3400043DB8 /* sideMenuTableViewCell.swift */,
@@ -259,6 +261,7 @@
 				6CB68C5D1C59B5170054E2DC /* InfoViewController.swift */,
 				6C67CF621C58ACBD001195BC /* HomeViewController.swift */,
 				6CB321261C5F21290061573E /* RecordViewController.swift */,
+				E74592DB1C5706EE00C86DA8 /* Main.storyboard */,
 				E74592E11C5706EE00C86DA8 /* Assets.xcassets */,
 				E74592E31C5706EE00C86DA8 /* LaunchScreen.storyboard */,
 				E74592E61C5706EE00C86DA8 /* Info.plist */,
@@ -330,7 +333,7 @@
 				TargetAttributes = {
 					E74592D31C5706EE00C86DA8 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 6SK6Z2X59W;
+						DevelopmentTeam = MY7PN5V7K8;
 					};
 				};
 			};
@@ -483,6 +486,7 @@
 			files = (
 				E74593431C57100B00C86DA8 /* LoginViewController.swift in Sources */,
 				F61203171C633B3400043DB8 /* sideMenuTableViewCell.swift in Sources */,
+				765B6DA41C64715900A035C6 /* SignupViewController.swift in Sources */,
 				E74592E01C5706EE00C86DA8 /* doharmony.xcdatamodeld in Sources */,
 				F6BAB53C1C645B1D00414A4E /* HomeCollectionViewCell.swift in Sources */,
 				DFB2C5FC1C6441E100C88C15 /* PlayerViewController.swift in Sources */,
@@ -632,7 +636,7 @@
 				INFOPLIST_FILE = doharmony/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tingkerianss;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingkeriansss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "doharmony/doharmony-Bridging-Header.h";
@@ -651,7 +655,7 @@
 				INFOPLIST_FILE = doharmony/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tingkerianss;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingkeriansss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "doharmony/doharmony-Bridging-Header.h";
