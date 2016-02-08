@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LayoutPage1: UIViewController, UIGestureRecognizerDelegate {
+class LayoutPage1ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     
     @IBOutlet var LayoutSelectionView: UIView!

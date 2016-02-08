@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LayoutPage2: UIViewController {
+class LayoutPage2ViewController: UIViewController {
     
     @IBOutlet var LayoutSelectionView: UIView!
     
